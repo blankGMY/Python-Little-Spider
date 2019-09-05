@@ -26,7 +26,7 @@ def get_proxy(url):
                 port=tds[1].string#PORT
                 type=tds[3].string#类型
                 proxy="{{ '{0}':'{1}:{2}'}},".format(type,ip,port)  #非匹配符{}需要写两个
-                print(proxy)
+                print(proxy)   #以Python调用代理IP格式打印
     except Exception as x:
         print("获取代理IP失败" ,x)
 
